@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "bb54f65647392ffebd5d57c9415249a2"
+name = "wishlist-app"
+handle = "wishlist-app-136"
+application_url = "https://columnists-invoice-reservation-cosmetic.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "codeinspire-app.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://columnists-invoice-reservation-cosmetic.trycloudflare.com/auth/callback",
+  "https://columnists-invoice-reservation-cosmetic.trycloudflare.com/auth/shopify/callback",
+  "https://columnists-invoice-reservation-cosmetic.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
